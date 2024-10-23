@@ -44,7 +44,7 @@ public class CounterMachine {
         System.out.println(result);
     }
 
-    private String calculateResult(Counter counter) {
+    String calculateResult(Counter counter) {
         if (counter.isThreeStrike()) {
             return String.format(Constant.OUTPUT_STRIKE_COUNT, counter.getStrike());
         }
